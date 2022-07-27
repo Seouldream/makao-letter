@@ -1,0 +1,406 @@
+/* 1920 이상 데스크탑 */
+
+@media screen and (min-width:1920px) {
+    
+head {
+  
+}
+
+.news-title {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 15vh;
+    border-bottom: 1px solid black;
+}
+h1 {
+    display: inline-block;
+    grid-column: 2/3;
+    font-family: 'Dancing Script', cursive;
+}
+
+li {
+    border: 1px solid black;
+}
+.news-title>ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-self: center;
+    justify-content: end;
+    z-index: -3;
+}
+
+.news-title>span {
+    grid-column: 2 / 3;
+    font-size: 3vh;
+    justify-self: center;
+}
+
+
+.menu-icon {
+    
+}
+.magnifying-lense {
+    width:5vh;
+}
+
+.user {
+    width:5vh;
+}
+
+.title-image {
+    position: absolute;
+    width:80vh;
+    top:2vh;
+    left:50vh;
+    z-index: -1;
+}
+
+.whale-container {
+    height: 45vh;
+}
+
+.headline {
+    display: grid;
+    background-color: rgb(69, 147, 252);
+    font-size: 5vh;
+    height: 17vh;
+    z-index: 1;
+    align-content: center;
+    padding-left: 5vh;
+    width: 100vw;
+}
+
+}
+
+/* 1920미만 데스크탑  */
+
+@media screen and (max-width:1919px) and (min-width:1024px) {
+    
+    head {
+      
+    }
+    
+    .news-title {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        height: 15vh;
+        border-bottom: 1px solid black;
+    }
+    h1 {
+        display: inline-block;
+        grid-column: 2/3;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    li {
+        border: 1px solid black;
+    }
+    .news-title>ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        align-self: center;
+        justify-content: end;
+        z-index: -3;
+    }
+    
+    .news-title>span {
+        grid-column: 2 / 3;
+        font-size: 3vh;
+        justify-self: center;
+    }
+    
+    
+    .menu-icon {
+        
+    }
+    .magnifying-lense {
+        width:5vh;
+    }
+    
+    .user {
+        width:5vh;
+    }
+    
+    .title-image {
+        position: absolute;
+        width:80vh;
+        top:2vh;
+        left:50vh;
+        z-index: -1;
+    }
+    
+    .whale-container {
+        height: 45vh;
+    }
+    
+    .headline {
+        display: grid;
+        background-color: rgb(69, 147, 252);
+        font-size: 5vh;
+        height: 17vh;
+        z-index: 1;
+        align-content: center;
+        padding-left: 5vh;
+        width: 100vw;
+    }
+    
+    }
+
+
+/*  태블릿 */
+    @media screen and (max-width:1023px) and (min-width:840px) {
+    
+        head {
+          
+        }
+        
+        html {
+            width:100vw;
+        }
+
+        .news-title {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20% 60% 20%;
+            height: 18vh;
+            border-bottom: 1px solid black;
+            width:100vw;
+        }
+
+        .news-title>span {
+            justify-self: end;
+            grid-column: 2/3;
+        }
+        h1 {
+            font-size: 8vh;
+            font-weight: 1000;
+            display: inline-block;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        li {
+            border: 1px solid black;
+        }
+        .news-title>ul{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            align-self: center;
+            justify-content: end;
+            z-index: -3;
+        }
+        
+        .news-title>span {
+            grid-column: 2 / 3;
+            font-size: 3vh;
+            justify-self: center;
+        }
+        
+        
+        .menu-icon {
+            opacity: 0;
+        }
+        .magnifying-lense {
+            width:5vh;
+        }
+        
+        .user {
+            width:5vh;
+        }
+        
+        .title-image {
+            position: absolute;
+            width:80vh;
+            top:2vh;
+            left:50vh;
+            z-index: -1;
+        }
+        
+        .whale-container {
+            height: 45vh;
+        }
+        
+        .headline {
+            display: grid;
+            background-color: rgb(69, 147, 252);
+            font-size: 5vh;
+            height: 17vh;
+            z-index: 1;
+            align-content: center;
+            padding-left: 5vh;
+            width: 100vw;
+            white-space: pre;
+        }
+        
+        }
+
+
+@media screen and (max-width:839px) and (min-width:600px) {
+    
+        head {
+              
+        }
+            
+    html {
+            width:100vw;
+            }
+    
+            .news-title {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 20% 60% 20%;
+                height: 18vh;
+                border-bottom: 1px solid black;
+                width:100vw;
+            }
+    
+            .news-title>span {
+                justify-self: end;
+                grid-column: 2/3;
+            }
+            h1 {
+                font-size: 8vh;
+                font-weight: 1000;
+                display: inline-block;
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            li {
+                border: 1px solid black;
+            }
+            .news-title>ul{
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                align-self: center;
+                justify-content: end;
+                z-index: -3;
+            }
+            
+            .news-title>span {
+                grid-column: 2 / 3;
+                font-size: 3vh;
+                justify-self: center;
+            }
+            
+            
+            .menu-icon {
+                opacity: 0;
+            }
+            .magnifying-lense {
+                width:5vh;
+            }
+            
+            .user {
+                width:5vh;
+            }
+            
+            .title-image {
+                position: absolute;
+                width:80vh;
+                top:2vh;
+                left:50vh;
+                z-index: -1;
+            }
+            
+            .whale-container {
+                height: 45vh;
+            }
+            
+            .headline {
+                display: grid;
+                background-color: rgb(69, 147, 252);
+                font-size: 5vh;
+                height: 17vh;
+                z-index: 1;
+                align-content: center;
+                padding-left: 5vh;
+                width: 100vw;
+                white-space: pre;
+            }
+            
+}
+
+@media screen and (max-width:599px) {
+    
+
+html {
+    width:100vw;
+    }
+
+        .news-title {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20% 60% 20%;
+            height: 18vh;
+            border-bottom: 1px solid black;
+            width:100vw;
+        }
+
+        .news-title>span {
+            justify-self: end;
+            grid-column: 2/3;
+        }
+        h1 {
+            font-size: 8vh;
+            font-weight: 1000;
+            display: inline-block;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        li {
+            border: 1px solid black;
+        }
+        .news-title>ul{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            align-self: center;
+            justify-content: end;
+            z-index: -3;
+        }
+        
+        .news-title>span {
+            grid-column: 2 / 3;
+            font-size: 3vh;
+            justify-self: center;
+        }
+        
+        
+        .menu-icon {
+            opacity: 0;
+        }
+        .magnifying-lense {
+            width:5vh;
+        }
+        
+        .user {
+            width:5vh;
+        }
+        
+        .title-image {
+            position: absolute;
+            width:70vh;
+            top:20vh;
+            z-index: -1;
+        }
+        
+        .whale-container {
+            height: 45vh;
+        }
+        
+        .headline {
+            display: grid;
+            background-color: rgb(69, 147, 252);
+            font-size: 5vh;
+            height: 17vh;
+            z-index: 1;
+            align-content: center;
+            padding-left: 5vh;
+            width: 100vw;
+            justify-content: center;
+        }
+        
+}
