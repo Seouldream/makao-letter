@@ -1,96 +1,34 @@
-/* 1920 이상 데스크탑 */
-
-@media screen and (min-width:1920px) {
-    
-head {
-  
+html {
+        
 }
-
-.news-title {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    height: 15vh;
-    border-bottom: 1px solid black;
-}
-h1 {
-    display: inline-block;
-    grid-column: 2/3;
-    font-family: 'Dancing Script', cursive;
-}
-
-li {
-    border: 1px solid black;
-}
-.news-title>ul{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-self: center;
-    justify-content: end;
-    z-index: -3;
-}
-
-.news-title>span {
-    grid-column: 2 / 3;
-    font-size: 3vh;
-    justify-self: center;
-}
-
-
-.menu-icon {
-    
-}
-.magnifying-lense {
-    width:5vh;
-}
-
-.user {
-    width:5vh;
-}
-
-.title-image {
-    position: absolute;
-    width:80vh;
-    top:2vh;
-    left:50vh;
-    z-index: -1;
-}
-
-.whale-container {
-    height: 45vh;
-}
-
-.headline {
-    display: grid;
-    background-color: rgb(69, 147, 252);
-    font-size: 5vh;
-    height: 17vh;
-    z-index: 1;
-    align-content: center;
-    padding-left: 5vh;
-    width: 100vw;
-}
-
-}
-
-/* 1920미만 데스크탑  */
-
-@media screen and (max-width:1919px) and (min-width:1024px) {
-    
     head {
-      
+        position: fixed;
+        top:10vh;
+        left:10vh;
+        right:10vh
     }
-    
     .news-title {
         display: grid;
+        justify-content: center;
         grid-template-columns: 20% 60% 20%;
-        height: 15vh;
+        height: 18vh;
         border-bottom: 1px solid black;
+        width:100vw;
+
+    }
+
+    .news-title>span {
+        justify-self: end;
+        grid-column: 2/3;
+        
     }
     h1 {
+        color: aquamarine;
+        font-size: 4vh;
+        font-weight: 1000;
         display: inline-block;
-        grid-column: 2/3;
         font-family: 'Dancing Script', cursive;
+        width:100vw;
     }
     
     li {
@@ -113,7 +51,7 @@ li {
     
     
     .menu-icon {
-        
+        opacity: 0;
     }
     .magnifying-lense {
         width:5vh;
@@ -124,49 +62,59 @@ li {
     }
     
     .title-image {
-        position: absolute;
-        width:80vh;
-        top:2vh;
-        left:50vh;
-        z-index: -1;
+     position: fixed;
+     left: 100vh;
+     top:70vh;
     }
     
     .whale-container {
         height: 45vh;
+        width:100vw;
     }
     
     .headline {
         display: grid;
+        height: 100px;
+        width: 400px;
         background-color: rgb(69, 147, 252);
-        font-size: 5vh;
+        font-size: 1vh;
         height: 17vh;
         z-index: 1;
         align-content: center;
         padding-left: 5vh;
-        width: 100vw;
-    }
-    
+        justify-content: start;
     }
 
-
-/*  태블릿 */
-    @media screen and (max-width:1023px) and (min-width:840px) {
+    h2{
+        display: inline-block;
+        width: 50px;
+        height: 200px;
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+    }
     
-        head {
-          
-        }
+
+
+
+@media screen and (min-width:600px) {
+
+    html {
         
-        html {
-            width:100vw;
+    }
+        head {
+            position: fixed;
+            top:10vh;
+            left:10vh;
+            right:10vh
         }
-
         .news-title {
             display: grid;
             justify-content: center;
             grid-template-columns: 20% 60% 20%;
             height: 18vh;
             border-bottom: 1px solid black;
-            width:100vw;
+
         }
 
         .news-title>span {
@@ -174,7 +122,8 @@ li {
             grid-column: 2/3;
         }
         h1 {
-            font-size: 8vh;
+            color: aquamarine;
+            font-size: 4vh;
             font-weight: 1000;
             display: inline-block;
             font-family: 'Dancing Script', cursive;
@@ -211,33 +160,45 @@ li {
         }
         
         .title-image {
-            position: absolute;
-            width:80vh;
-            top:2vh;
-            left:50vh;
-            z-index: -1;
+         position: fixed;
+         left: 100vh;
+         top:70vh;
         }
         
         .whale-container {
             height: 45vh;
+            width:100vw;
         }
         
         .headline {
             display: grid;
+            height: 100px;
+            width: 50px;
             background-color: rgb(69, 147, 252);
-            font-size: 5vh;
+            font-size: 1vh;
             height: 17vh;
             z-index: 1;
             align-content: center;
             padding-left: 5vh;
-            width: 100vw;
-            white-space: pre;
+            justify-content: start;
+        }
+
+        h2{
+            display: inline-block;
+            width: 50px;
+            height: 200px;
+            font-size: 100px;
+            margin: 0;
+            padding: 0;
         }
         
-        }
 
 
-@media screen and (max-width:839px) and (min-width:600px) {
+
+}
+    
+
+@media screen and (max-width:840px) {
     
         head {
               
@@ -323,84 +284,236 @@ li {
             
 }
 
-@media screen and (max-width:599px) {
-    
 
-html {
-    width:100vw;
+@media screen and (min-width:1024px) {
+    
+    head {
+      
+    }
+    
+    html {
+        width:100vw;
     }
 
-        .news-title {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 20% 60% 20%;
-            height: 18vh;
-            border-bottom: 1px solid black;
-            width:100vw;
-        }
+    .news-title {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 60% 20%;
+        height: 18vh;
+        border-bottom: 1px solid black;
+        width:100vw;
+    }
 
-        .news-title>span {
-            justify-self: end;
-            grid-column: 2/3;
-        }
-        h1 {
-            font-size: 8vh;
-            font-weight: 1000;
-            display: inline-block;
-            font-family: 'Dancing Script', cursive;
-        }
+    .news-title>span {
+        justify-self: end;
+        grid-column: 2/3;
+    }
+    h1 {
+        font-size: 8vh;
+        font-weight: 1000;
+        display: inline-block;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    li {
+        border: 1px solid black;
+    }
+    .news-title>ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        align-self: center;
+        justify-content: end;
+        z-index: -3;
+    }
+    
+    .news-title>span {
+        grid-column: 2 / 3;
+        font-size: 3vh;
+        justify-self: center;
+    }
+    
+    
+    .menu-icon {
+        opacity: 0;
+    }
+    .magnifying-lense {
+        width:5vh;
+    }
+    
+    .user {
+        width:5vh;
+    }
+    
+    .title-image {
+        position: absolute;
+        width:80vh;
+        top:2vh;
+        left:50vh;
+        z-index: -1;
+    }
+    
+    .whale-container {
+        height: 45vh;
+    }
+    
+    .headline {
+        display: grid;
+        background-color: rgb(69, 147, 252);
+        font-size: 5vh;
+        height: 17vh;
+        z-index: 1;
+        align-content: center;
+        padding-left: 5vh;
+        width: 100vw;
+        white-space: pre;
+    }
+    
+    }
+
+
+@media screen and (min-width:1920px) {
+    
+    head {
+      
+    }
+    
+    .news-title {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        height: 15vh;
+        border-bottom: 1px solid black;
+    }
+    h1 {
+        display: inline-block;
+        grid-column: 2/3;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    li {
+        border: 1px solid black;
+    }
+    .news-title>ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        align-self: center;
+        justify-content: end;
+        z-index: -3;
+    }
+    
+    .news-title>span {
+        grid-column: 2 / 3;
+        font-size: 3vh;
+        justify-self: center;
+    }
+    
+    
+    .menu-icon {
         
-        li {
-            border: 1px solid black;
-        }
-        .news-title>ul{
-            display: flex;
-            list-style: none;
-            flex-direction: row;
-            align-self: center;
-            justify-content: end;
-            z-index: -3;
-        }
-        
-        .news-title>span {
-            grid-column: 2 / 3;
-            font-size: 3vh;
-            justify-self: center;
-        }
-        
-        
-        .menu-icon {
-            opacity: 0;
-        }
-        .magnifying-lense {
-            width:5vh;
-        }
-        
-        .user {
-            width:5vh;
-        }
-        
-        .title-image {
-            position: absolute;
-            width:70vh;
-            top:20vh;
-            z-index: -1;
-        }
-        
-        .whale-container {
-            height: 45vh;
-        }
-        
-        .headline {
-            display: grid;
-            background-color: rgb(69, 147, 252);
-            font-size: 5vh;
-            height: 17vh;
-            z-index: 1;
-            align-content: center;
-            padding-left: 5vh;
-            width: 100vw;
-            justify-content: center;
-        }
-        
+    }
+    .magnifying-lense {
+        width:5vh;
+    }
+    
+    .user {
+        width:5vh;
+    }
+    
+    .title-image {
+        position: absolute;
+        width:80vh;
+        top:2vh;
+        left:50vh;
+        z-index: -1;
+    }
+    
+    .whale-container {
+        height: 45vh;
+    }
+    
+    .headline {
+        display: grid;
+        background-color: rgb(69, 147, 252);
+        font-size: 5vh;
+        height: 17vh;
+        z-index: 1;
+        align-content: center;
+        padding-left: 5vh;
+        width: 100vw;
+    }
+    
+}
+
+@media screen and (min-width:1920px) {
+    
+head {
+  
+}
+
+.news-title {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 15vh;
+    border-bottom: 1px solid black;
+}
+h1 {
+    display: inline-block;
+    grid-column: 2/3;
+    font-family: 'Dancing Script', cursive;
+}
+
+li {
+    border: 1px solid black;
+}
+.news-title>ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-self: center;
+    justify-content: end;
+    z-index: -3;
+}
+
+.news-title>span {
+    grid-column: 2 / 3;
+    font-size: 3vh;
+    justify-self: center;
+}
+
+
+.menu-icon {
+    
+}
+.magnifying-lense {
+    width:5vh;
+}
+
+.user {
+    width:5vh;
+}
+
+.title-image {
+    position: absolute;
+    width:80vh;
+    top:2vh;
+    left:50vh;
+    z-index: -1;
+}
+
+.whale-container {
+    height: 45vh;
+}
+
+.headline {
+    display: grid;
+    background-color: rgb(69, 147, 252);
+    font-size: 5vh;
+    height: 17vh;
+    z-index: 1;
+    align-content: center;
+    padding-left: 5vh;
+    width: 100vw;
+}
+
 }
